@@ -1,0 +1,49 @@
+{
+  "geode": "5.7.1",
+  "version": "v1.0.0",
+  "gd": {
+    "win": "2.2081"
+  },
+  "id": "neonarwhal.bestprogressghost",
+  "name": "Best Run Ghost",
+  "developer": "neonarwhal",
+  "description": "Races you against a semi-transparent ghost of your best progression on each level. Toggle it on or off per level from the pause menu.",
+  "tags": ["gameplay", "offline", "enhancement"],
+  "dependencies": {
+    "geode.node-ids": ">=v1.2.0"
+  },
+  "settings": {
+    "ghosts-enabled": {
+      "name": "Enable Ghosts",
+      "description": "Master switch. When off, no ghosts are shown or recorded anywhere, regardless of per-level settings.",
+      "type": "bool",
+      "default": true
+    },
+    "ghost-opacity": {
+      "name": "Ghost Opacity",
+      "description": "How visible the ghost is. Lower is more transparent.",
+      "type": "float",
+      "default": 0.4,
+      "min": 0.05,
+      "max": 1.0,
+      "controls": {
+        "slider": true,
+        "slider-step": 0.05,
+        "arrows": true,
+        "arrow-step": 0.05
+      }
+    },
+    "tint-ghost": {
+      "name": "Tint Ghost Blue",
+      "description": "Recolor the ghost icon light blue so it's easy to tell apart from your real player.",
+      "type": "bool",
+      "default": true
+    },
+    "record-in-practice": {
+      "name": "Record In Practice Mode",
+      "description": "Allow practice mode attempts (with checkpoints) to count toward your best progression. Off by default, since practice runs use checkpoints and aren't a fair real attempt.",
+      "type": "bool",
+      "default": false
+    }
+  }
+}
